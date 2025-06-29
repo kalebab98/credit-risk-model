@@ -37,7 +37,7 @@ class FeatureEngineer(BaseEstimator, TransformerMixin):
         
         return df
 
-# 2. Aggregate Features per Customer
+# 2. Aggregate Features per Customers
 class CustomerAggregator(BaseEstimator, TransformerMixin):
     def fit(self, X, y=None):
         return self
