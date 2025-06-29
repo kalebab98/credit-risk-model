@@ -62,7 +62,7 @@ That’s why it’s critical to validate the proxy against business understandin
 | **Performance** | May be less accurate on complex patterns | Typically higher accuracy and better handling of nonlinearities |
 | **Maintenance** | Easier to update and maintain | Requires more resources and monitoring |
 
-In financial services, a **hybrid approach** is common: start with interpretable models for baseline and regulatory reporting, and optionally use complex models for internal decision support if explainability tools are in place.
+In financial services, a **hybrid approach** is commons: start with interpretable models for baseline and regulatory reporting, and optionally use complex models for internal decision support if explainability tools are in place.
 
 ---
 
