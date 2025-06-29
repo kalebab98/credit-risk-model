@@ -1,3 +1,15 @@
+# Credit Risk Probability Model (B5W5 - Bati Bank)
+
+An end-to-end implementation of a credit scoring system that predicts the risk probability of customers using behavioral transaction data. This project was developed as part of Bati Bank's collaboration with an eCommerce platform to enable a Buy-Now-Pay-Later (BNPL) feature.
+
+---
+
+## 🚀 Overview
+
+This project involves building a credit risk scoring model using alternative data, particularly transaction histories. Since traditional default labels are unavailable, we create a **proxy target** using **RFM segmentation** and build interpretable ML pipelines with full CI/CD automation.
+
+---
+
 ## 📁 Project Structure
 
 ```bash
