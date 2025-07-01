@@ -22,7 +22,6 @@ credit-risk-model/
 ├── notebooks/                      # EDA & analysis notebooks
 │   └── 1.0-eda.ipynb
 ├── src/                            # All source code
-│   ├── __init__.py
 │   ├── data_processing.py
 │   ├── train.py
 │   ├── predict.py
@@ -77,4 +76,39 @@ That’s why it’s critical to validate the proxy against business understandin
 In financial services, a **hybrid approach** is common: start with interpretable models for baseline and regulatory reporting, and optionally use complex models for internal decision support if explainability tools are in place.
 
 ---
+### 📊 Task 4: Model Training and Evaluation
+- Implemented train.py to:
+  - Load and split data
+  - Train Logistic Regression and Random Forest classifiers
+  - Tune hyperparameters with RandomizedSearchCV
+  - Evaluate models using accuracy, precision, recall, F1, and ROC AUC
+  - Log experiments and metrics to MLflow
+  - Save the best model as best_random_forest_model.pkl
+
+### 🤖 Prediction Script
+- Created predict.py to:
+  - Load the saved model
+  - Accept preprocessed CSV (preprocessed.csv)
+  - Generate predictions and probabilities
+  - Output results to predict_out.csv
+
+### 🧪 Testing
+- Created test_data_processing.py using pytest to:
+  - Validate data loading
+  - Check column consistency
+  - Ensure data shape and null handling
+- Ran all 4 tests successfully ✅
+
+### 🐳 Dockerization
+- Wrote Dockerfile to containerize the FastAPI service
+- Created docker-compose.yml to manage build and port exposure
+- Verified:
+  - Docker version: 28.2.2
+  - Docker Compose version: v2.37.1-desktop.1
+
+### ⚙️ FastAPI Web Service
+- Built a FastAPI app in main.py to:
+  - Load model
+  - Receive JSON input via POST
+  - Return prediction and probability
 
